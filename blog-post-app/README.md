@@ -1,50 +1,44 @@
-# React + TypeScript + Vite
+# Blog Posts
+This is an application that lists blog posts. By clicking on a post, you can view its full content, including additional details like the author and date. The app includes a navbar to help you navigate back to the list of posts.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Getting started
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Make sure you have the following software installed:
 
-## Expanding the ESLint configuration
+- Node.js (version 14 or higher)
+- npm (Node Package Manager, comes with Node.js)
+- Git (to clone the repository)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repository
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+git clone https://github.com/PaoRivas/OH-Interview.git
+```
+2. Navigate into the project directory:
+
+```bash
+cd OH-Interview/blog-post-app
+```
+3. Install the dependencies:
+
+```bash
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Running Application
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm run dev
 ```
+
+## Acces the Application
+Once the server is running, open your browser and go to:
+```arduino
+http://localhost:5173
+```
+
