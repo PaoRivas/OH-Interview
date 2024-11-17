@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import { Provider } from "@/components/ui/provider"
 import './App.css'
-import { Navbar } from "./components/Navbar"
+import Navbar from "./components/Navbar"
 import PostList from "./components/PostList"
 import PostDetails from "./components/PostDetails"
 
